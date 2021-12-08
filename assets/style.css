@@ -139,6 +139,10 @@ hr {
     left: 30%;
   }
 
+  .bottom-cards {
+    margin-top: 2%;
+  }
+
   .scroll-container {
     height: 100vh;
     min-height: 450px;
