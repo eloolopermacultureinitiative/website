@@ -299,6 +299,10 @@ hr {
         /* padding-left: 2%; */
     }
 
+    .card-item {
+      margin-top: 4%
+    }
+
     /* .blocks {
       padding-left: 2%;
     } */
