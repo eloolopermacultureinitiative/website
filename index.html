@@ -11,6 +11,37 @@
 
     <link rel="stylesheet" href="assets/style.css" type="text/css" />
 
+    <script src="map/map.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+        .map-container {
+            height: 400px;
+        }
+
+
+        #legend {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            padding: 10px;
+            margin: 10px;
+            border: 3px solid #000;
+        }
+
+        #legend h3 {
+            margin-top: 0;
+        }
+
+        #legend img {
+            vertical-align: middle;
+        }
+    </style>
+
     <title>Home</title>
 </head>
 
@@ -19,7 +50,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo.png" width="90" height="70" class="d-inline-block align-top" alt="">
-          </a>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -99,20 +130,20 @@
     </div>
 
     <!-- Four Blocks -->
-    <div class="mt-5 blocks">
+    <div class="mt-5">
         <div class="container">
             <div class="row hidden-md-up">
                 <div class="col-md-6">
-                    <div class="card text-center" style="width: 18rem; position: relative;">
+                    <div class="card text-center">
                         <img class="card-img-top" src="assets/images/nature.jpg" alt="Card image cap">
                         <div class="card-img-overlay">
-                            <h5 class="card-title text-light">PERMACULTURE CONSULTATION & IMPLEMENTATION</h5>
+                            <h5 class="card-title text-light" style="font-size: 30px;">PERMACULTURE CONSULTATION & IMPLEMENTATION</h5>
                             <br>
                             <div class="card-btn">
-                                <a class="btn btn-success bg-image-btn" href="#" role="button">Learn More</a>
+                                <a class="btn btn-success btn-lg bg-image-btn" href="#" role="button">Learn More</a>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                    </div>
                     <!-- <div class="bg-image-card h-100" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');">
                         <div class="text-center">
                             <h3>PERMACULTURE CONSULTATION & IMPLEMENTATION</h3>
@@ -123,16 +154,16 @@
                     </div> -->
                 </div>
                 <div class="col-md-6">
-                    <div class="card text-center" style="width: 18rem; position: relative;">
+                    <div class="card text-center">
                         <img class="card-img-top" src="assets/images/nature.jpg" alt="Card image cap">
                         <div class="card-img-overlay">
-                            <h5 class="card-title text-light">FOOD & <br>NUTRITION SECURITY</h5>
+                            <h5 class="card-title text-light" style="font-size: 30px;">FOOD & <br>NUTRITION SECURITY</h5>
                             <br>
                             <div class="card-btn">
-                                <a class="btn btn-success bg-image-btn" href="#" role="button">Learn More</a>
+                                <a class="btn btn-success btn-lg bg-image-btn" href="#" role="button">Learn More</a>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                    </div>
                     <!-- <div class="bg-image-card h-100" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');">
                         <div class="text-center">
                             <h3>FOOD & <br>NUTRITION SECURITY</h3>
@@ -145,16 +176,16 @@
             </div><br>
             <div class="row">
                 <div class="col-md-6 bg-image-col">
-                    <div class="card text-center" style="width: 18rem; position: relative;">
+                    <div class="card text-center">
                         <img class="card-img-top" src="assets/images/nature.jpg" alt="Card image cap">
                         <div class="card-img-overlay">
-                            <h5 class="card-title text-light">ENVIRONMENTAL AWARENESS, SCHOOLS & YOUTH</h5>
+                            <h5 class="card-title text-light" style="font-size: 30px;">ENVIRONMENTAL AWARENESS, SCHOOLS & YOUTH</h5>
                             <br>
                             <div class="card-btn">
-                                <a class="btn btn-success bg-image-btn" href="#" role="button">Learn More</a>
+                                <a class="btn btn-success btn-lg bg-image-btn" href="#" role="button">Learn More</a>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                    </div>
                     <!-- <div class="bg-image-card" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');">
                         <div class="text-center">
                             <h3>ENVIRONMENTAL AWARENESS, SCHOOLS & YOUTH</h3>
@@ -165,16 +196,16 @@
                     </div> -->
                 </div>
                 <div class="col-md-6 bg-image-col">
-                    <div class="card text-center" style="width: 18rem; position: relative;">
+                    <div class="card text-center">
                         <img class="card-img-top" src="assets/images/nature.jpg" alt="Card image cap">
                         <div class="card-img-overlay">
-                            <h5 class="card-title text-light">PLANTING TREES & CARBON OFFSETTING</h5>
+                            <h5 class="card-title text-light" style="font-size: 30px;">PLANTING TREES & CARBON OFFSETTING</h5>
                             <br>
                             <div class="card-btn">
-                                <a class="btn btn-success bg-image-btn" href="#" role="button">Learn More</a>
+                                <a class="btn btn-success btn-lg bg-image-btn" href="#" role="button">Learn More</a>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                    </div>
                     <!-- <div class="bg-image-card" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');">
                         <div class="text-center">
                             <h3>PLANTING TREES & CARBON OFFSETTING</h3>
@@ -184,6 +215,266 @@
                         </div>
                     </div> -->
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 text-center" style="padding-right: 10%; padding-left: 10%;">
+        <hr class="text-primary">
+        <div class="container mt-5">
+            <div class="text-center">
+                <div class="text-success">
+                    <h3><strong>Our Projects</strong></h3>
+                </div>
+                <p>
+                    We cannot do the work we do without the generous support of foundations, companies and individuals.
+                    Get involved and help us restore ecosystems, and empower environmental stewards across Sub-Saharan
+                    Africa.
+                </p>
+            </div>
+            <div class="row map-container">
+                <div id="map"></div>
+                <div id="legend">
+                    <h3>Legend</h3>
+                </div>
+                <!-- <script>
+                    // This example displays a marker at the center of Australia.
+                    // When the user clicks the marker, an info window opens.
+                    function initMap() {
+                        const firstMarker = { lat: -22.967062, lng: 18.4929993 };
+                        const map = new google.maps.Map(document.getElementById("map"), {
+                            zoom: 5,
+                            center: firstMarker,
+                        });
+                        const contentString =
+                            '<div id="content">' +
+                            '<div id="siteNotice">' +
+                            "</div>" +
+                            '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+                            '<div id="bodyContent">' +
+                            "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+                            "sandstone rock formation in the southern part of the " +
+                            "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+                            "south west of the nearest large town, Alice Springs; 450&#160;km " +
+                            "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
+                            "features of the Uluru - Kata Tjuta National Park. Uluru is " +
+                            "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+                            "Aboriginal people of the area. It has many springs, waterholes, " +
+                            "rock caves and ancient paintings. Uluru is listed as a World " +
+                            "Heritage Site.</p>" +
+                            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+                            "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+                            "(last visited June 22, 2009).</p>" +
+                            '<img style="height: 200px; width: 300px;" src="https://media.istockphoto.com/photos/sossusvlei-dune-naukluft-national-park-namibia-picture-id493516406?k=20&m=493516406&s=612x612&w=0&h=QYQqZPSxEdvhQkCcwK7mFEgFXX3jUDPrjZZq_iwmOnI=" alt="Italian Trulli">' +
+                            '<img style="height: 200px; width: 300px; padding-left: 1%" src="https://media.istockphoto.com/photos/sossusvlei-dune-naukluft-national-park-namibia-picture-id493516406?k=20&m=493516406&s=612x612&w=0&h=QYQqZPSxEdvhQkCcwK7mFEgFXX3jUDPrjZZq_iwmOnI=" alt="Italian Trulli">' +
+                            "</div>" +
+                            "</div>";
+                        const infowindow = new google.maps.InfoWindow({
+                            content: contentString,
+                        });
+                        const marker = new google.maps.Marker({
+                            position: firstMarker,
+                            map,
+                            title: "Uluru (Ayers Rock)",
+                        });
+
+                        marker.addListener("click", () => {
+                            infowindow.open({
+                                anchor: marker,
+                                map,
+                                shouldFocus: false,
+                            });
+                        });
+                    }
+                </script> -->
+                <script>
+                    var projectType1 = [
+                        {
+                            "title": 'Augustineum Secondary School',
+                            "lat": '-22.540763',
+                            "lng": '17.042851',
+                            "description": '<div id="content">' +
+                                '<div id="siteNotice">' +
+                                "</div>" +
+                                '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+                                '<div id="bodyContent">' +
+                                "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+                                "sandstone rock formation in the southern part of the " +
+                                "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+                                "south west of the nearest large town, Alice Springs; 450&#160;km " +
+                                "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
+                                "features of the Uluru - Kata Tjuta National Park. Uluru is " +
+                                "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+                                "Aboriginal people of the area. It has many springs, waterholes, " +
+                                "rock caves and ancient paintings. Uluru is listed as a World " +
+                                "Heritage Site.</p>" +
+                                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+                                "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+                                "(last visited June 22, 2009).</p>" +
+                                "</div>"
+                        },
+                        {
+                            "title": 'Nyae Nyae',
+                            "lat": '-19.590814',
+                            "lng": '20.500251',
+                            "description": 'Juhu Beach is one of favourite tourist attractions situated in Mumbai.'
+                        },
+                        {
+                            "title": 'Girgaum Beach',
+                            "lat": '-18.812971',
+                            "lng": '13.711052',
+                            "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
+                        },
+                        {
+                            "title": 'Jijamata Udyan',
+                            "lat": '-25.085841',
+                            "lng": '16.375236',
+                            "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
+                        },
+                        {
+                            "title": 'Sanjay Gandhi National Park',
+                            "lat": '-22.794153871064925',
+                            "lng": '19.08885917449947',
+                            "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+                        }
+                    ];
+
+                    var projectType2 = [
+                        {
+                            "title": 'Augustineum Secondary School',
+                            "lat": '-21.61318168841259',
+                            "lng": ' 20.21971298629857',
+                            "description": '<div id="content">' +
+                                '<div id="siteNotice">' +
+                                "</div>" +
+                                '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+                                '<div id="bodyContent">' +
+                                "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+                                "sandstone rock formation in the southern part of the " +
+                                "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+                                "south west of the nearest large town, Alice Springs; 450&#160;km " +
+                                "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
+                                "features of the Uluru - Kata Tjuta National Park. Uluru is " +
+                                "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+                                "Aboriginal people of the area. It has many springs, waterholes, " +
+                                "rock caves and ancient paintings. Uluru is listed as a World " +
+                                "Heritage Site.</p>" +
+                                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+                                "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+                                "(last visited June 22, 2009).</p>" +
+                                "</div>"
+                        },
+                        {
+                            "title": 'Nyae Nyae',
+                            "lat": '-21.654032',
+                            "lng": '18.827196',
+                            "description": 'Juhu Beach is one of favourite tourist attractions situated in Mumbai.'
+                        },
+                        {
+                            "title": 'Girgaum Beach',
+                            "lat": '-21.641267',
+                            "lng": '14.537035',
+                            "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
+                        },
+                        {
+                            "title": 'Jijamata Udyan',
+                            "lat": '-25.532639',
+                            "lng": '15.343004',
+                            "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
+                        }
+                    ];
+
+                    const iconBase = "http://maps.google.com/mapfiles/ms/icons/";
+
+                    const icons = {
+                        parking: {
+                            name: "Project Type 1",
+                            icon: iconBase + "red-dot.png",
+                        },
+                        library: {
+                            name: "Project Type 2",
+                            icon: iconBase + "green-dot.png",
+                        },
+                        info: {
+                            name: "Project Type 3",
+                            icon: iconBase + "orange-dot.png",
+                        },
+                    };
+
+                    window.onload = function () {
+                        LoadMap();
+                    }
+                    function LoadMap() {
+                        var mapOptions = {
+                            center: new google.maps.LatLng(projectType1[0].lat, projectType1[0].lng),
+                            zoom: 5,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                        //Create and open InfoWindow.
+                        var infoWindow = new google.maps.InfoWindow();
+
+                        for (var i = 0; i < projectType1.length; i++) {
+                            var data = projectType1[i];
+                            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                            var marker = new google.maps.Marker({
+                                position: myLatlng,
+                                map: map,
+                                title: data.title,
+                                // icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+                            });
+
+
+
+                            //Attach click event to the marker.
+                            (function (marker, data) {
+                                google.maps.event.addListener(marker, "click", function (e) {
+                                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                                    infoWindow.setContent("<div style = 'width:500px;min-height:80px'>" + data.description + "</div>");
+                                    infoWindow.open(map, marker);
+                                });
+                            })(marker, data);
+                        }
+
+                        for (var i = 0; i < projectType2.length; i++) {
+                            var data = projectType2[i];
+                            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                            var marker = new google.maps.Marker({
+                                position: myLatlng,
+                                map: map,
+                                title: data.title,
+                                icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+                            });
+
+
+
+                            //Attach click event to the marker.
+                            (function (marker, data) {
+                                google.maps.event.addListener(marker, "click", function (e) {
+                                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                                    infoWindow.setContent("<div style = 'width:500px;min-height:80px'>" + data.description + "</div>");
+                                    infoWindow.open(map, marker);
+                                });
+                            })(marker, data);
+                        };
+
+                        const legend = document.getElementById("legend");
+
+                        for (const key in icons) {
+                            const type = icons[key];
+                            const name = type.name;
+                            const icon = type.icon;
+                            const div = document.createElement("div");
+
+                            div.innerHTML = '<br><img src="' + icon + '"> ' + name + "";
+                            legend.appendChild(div);
+                        }
+
+                        map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(legend);
+
+                    }
+                </script>
             </div>
         </div>
     </div>
@@ -228,7 +519,8 @@
                         <div class="text-center text-light">
                             <h3>GET INVOLVED</h3>
                             <div class="text-center bg-card-btn">
-                                <a class="btn btn-light bg-image-btn" href="get-involved.html" role="button">Learn More</a>
+                                <a class="btn btn-light bg-image-btn" href="get-involved.html" role="button">Learn
+                                    More</a>
                             </div>
                         </div>
                     </div>
@@ -328,6 +620,8 @@
         </div>
     </footer>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDG6QGiz6rhEaW2rtYk508ABto6B8qtb_g&callback=initMap"
+        async defer></script>
 
 </body>
 
@@ -335,6 +629,5 @@
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/script.js"></script>
-
 
 </html>
