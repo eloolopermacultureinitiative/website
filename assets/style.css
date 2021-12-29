@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 * {
     font-family: 'Georama', sans-serif;
@@ -164,7 +164,7 @@ body {
   }
 
   .scroll-container {
-    height: 100vh;
+    height: 40vh;
     min-height: 450px;
     padding: 2rem 1rem;
     display: flex;
@@ -227,6 +227,11 @@ body {
     .scroll-container:nth-of-type(even) {
       flex-direction: column;
       align-content: inherit;
+    }
+
+    .scroll-container {
+      height: 90vh;
+      min-height: 450px;
     }
   
     .scroll-element {

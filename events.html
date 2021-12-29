@@ -11,6 +11,37 @@
     <link rel="stylesheet" href="assets/style.css" type="text/css" />
 
     <title>Events</title>
+
+    <style>
+        @media (max-width: 550px) {
+           .big-container {
+               display: none;
+           }
+        }
+        @media (min-width: 550px) {
+           .small-container {
+               display: none;
+           }
+        }
+        /* Responsive iFrame */
+        .responsive-iframe-container {
+           position: relative;
+           padding-bottom: 56.25%;
+           padding-top: 30px;
+           height: 0;
+           overflow: hidden;
+        }
+        .responsive-iframe-container iframe,   
+        .vresponsive-iframe-container object,  
+        .vresponsive-iframe-container embed {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+        }
+        </style>
+        
 </head>
 
 <body>
@@ -66,7 +97,11 @@
                 style="background-image: url('assets/images/plant.jpg'); height: 100%; width: 100%; object-fit: contain">
                 <div class="text-center">
                     <div class="text-light text-center" style="padding-top: 5%;">
-                        <h1><strong>Events</strong></h3>
+                        <h1><strong>Events</strong></h1>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
@@ -82,8 +117,15 @@
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur.</p>
         <br>
-        <div class="responsiveCal">
+
+        <!-- Desktop View of Calendar -->
+        <div class="responsive-iframe-container big-container">
             <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Africa%2FWindhoek&showTitle=0&src=dmV0YXJha2ExODNAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <!-- Mobile View of Calendar -->
+        <div class="responsive-iframe-container small-container">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Africa%2FWindhoek&showNav=1&mode=AGENDA&showTitle=0&src=dmV0YXJha2ExODNAZ21haWwuY29t&src=YXMzdW9pZmptZjYydHR0aDFqamd0bGxlOHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=bTM1djEwdjhvZjRtbHEzcGYyaXM0bG1hZjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23009688&color=%237986CB&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>
 
